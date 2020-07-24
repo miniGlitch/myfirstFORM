@@ -1,83 +1,6 @@
 body {
   background-color: silver;
-  background-image: radial-gradient(
-      circle at 100% 150%,
-      silver 24%,
-      white 24%,
-      white 28%,
-      silver 28%,
-      silver 36%,
-      white 36%,
-      white 40%,
-      transparent 40%,
-      transparent
-    ),
-    radial-gradient(
-      circle at 0 150%,
-      silver 24%,
-      white 24%,
-      white 28%,
-      silver 28%,
-      silver 36%,
-      white 36%,
-      white 40%,
-      transparent 40%,
-      transparent
-    ),
-    radial-gradient(
-      circle at 50% 100%,
-      white 10%,
-      silver 10%,
-      silver 23%,
-      white 23%,
-      white 30%,
-      silver 30%,
-      silver 43%,
-      white 43%,
-      white 50%,
-      silver 50%,
-      silver 63%,
-      white 63%,
-      white 71%,
-      transparent 71%,
-      transparent
-    ),
-    radial-gradient(
-      circle at 100% 50%,
-      white 5%,
-      silver 5%,
-      silver 15%,
-      white 15%,
-      white 20%,
-      silver 20%,
-      silver 29%,
-      white 29%,
-      white 34%,
-      silver 34%,
-      silver 44%,
-      white 44%,
-      white 49%,
-      transparent 49%,
-      transparent
-    ),
-    radial-gradient(
-      circle at 0 50%,
-      white 5%,
-      silver 5%,
-      silver 15%,
-      white 15%,
-      white 20%,
-      silver 20%,
-      silver 29%,
-      white 29%,
-      white 34%,
-      silver 34%,
-      silver 44%,
-      white 44%,
-      white 49%,
-      transparent 49%,
-      transparent
-    );
+  background-image: radial-gradient( circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent), radial-gradient( circle at 0 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent), radial-gradient( circle at 50% 100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent), radial-gradient( circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent), radial-gradient( circle at 0 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
   background-size: 100px 50px;
   font-family: Ubuntu-Bold;
   font-size: 30px;
@@ -112,14 +35,12 @@ body {
   font-weight: 100;
   font-family: Ubuntu-Bold;
   color: rgb(64, 56, 102);
-
   text-align: center;
   font-size: 25px;
 }
 
 .fields {
   height: 62px;
-
   position: relative;
   display: block;
   width: 100%;
@@ -129,4 +50,50 @@ body {
   background-color: rgb(242, 242, 242);
   border: none;
   margin-bottom: 1em;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-group p {
+  font-weight: 100;
+  font-family: Ubuntu-Bold;
+  color: rgb(64, 56, 102);
+  text-align: center;
+  font-size: 25px;
+}
+
+a.button4 {
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  text-align: center;
+  transition: all 0.2s;
+}
+
+a.button4:hover {
+  border-color: rgba(255, 255, 255, 1);
+}
+
+@media all and (max-width:30em) {
+  a.button4 {
+    display: block;
+    margin: 0.2em auto;
+  }
+}
+
+button {
+  display: none;
 }

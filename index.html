@@ -19,13 +19,13 @@
   <body>
     <div class="box">
       <header>
-        <h1 id="Title">AnimeCool Survey Form</h1>
+        <h1 id="title">AnimeCool Survey Form</h1>
         <p id="description">
           Thank you for taking the time to complete our awesome form
         </p>
         <form id="survey-form">
           <div class="form-group">
-            <label for="name"></label>
+            <label id="name-label"for="name">Name</label>
             <input
               type="text"
               name="name"
@@ -36,19 +36,19 @@
             />
           </div>
           <div class="form-group">
-            <label  for="email"></label>
+            <label id="email-label"  for="email">Email</label>
             <input
-              type="text"
-              name="name"
-              id="name"
+              type="email"
+              name="email"
+              id="email"
               class="form-control fields"
               placeholder="Enter your Email"
               required
             />
           </div>
           <div class="form-group">
-            <label  for="number"
-              ><span class="clue"></span></label
+            <label id="number-label" for="number"
+              ><span class="clue"></span>Number</label
             >
             <input
               type="number"
@@ -189,9 +189,8 @@
                     ></textarea>
                   </div>
                   <div class="form-group">
-                    <button type="submit" id="submit" class="submit-button">
-                      Submit
-                    </button>
+                    <button id="submit"></button>
+                    <a href="something" class="button4" style="background-color:#9a4ef1">SUBMIT</a>
                   </div>
                
           
@@ -201,6 +200,6 @@
         <div></div>
       </main>
     </div>
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
